@@ -10,21 +10,197 @@
 </head>
 
 <body class="bg-white font-family-karla">
-    <nav class="w-full py-4 bg-white-800 shadow">
-        <div class="w-full container mx-auto  flex flex-wrap items-center justify-between">
+    <section>
+        <nav class="w-full py-4 bg-white-800 shadow">
+            <div class="w-full container mx-auto  flex flex-wrap items-center justify-between">
 
-            <nav>
-                <ul
-                    class="flex items-center justify-between font-bold text-sm text-cyan-400 text-center uppercase no-underline">
-                    <li><a class="hover:text-gray-200 hover:underline px-4" href="index.html">Startsidan</a></li>
-                    <li><a class="hover:text-gray-200 hover:underline px-4" href="bootstrap.html">Bootstrap</a></li>
-                    <li><a class="hover:text-gray-200 hover:underline px-4" href="#">Tailwind</a></li>
-                </ul>
-            </nav>
+                <nav>
+                    <ul
+                        class="flex items-center justify-between font-bold text-sm text-cyan-400 text-center uppercase no-underline">
+                        <li><a class="hover:text-gray-200 hover:underline px-4" href="index.html">Startsidan</a></li>
+                        <li><a class="hover:text-gray-200 hover:underline px-4" href="bootstrap.html">Bootstrap</a></li>
+                        <li><a class="hover:text-gray-200 hover:underline px-4" href="#">Tailwind</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </section>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="w-full container mx-auto border-0 border-cyan-700 bg-cyan-300 shadow">
+            <p class="text-center text-slate-500 text-4xl">CSS ramverk - Tailwindcss</p>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="grid grid-cols-3 gap-4 text-center">
+            <div>
+                <p class="text-3xl">Vad är Tailwindcss?</p><br>
+                <p class="text-xl">Tailwind CSS släpptes först i maj 2019 och är ett front-end CSS-ramverk. Tailwind är
+                    ett av de mest
+                    populära CSS-ramverken på marknaden. Dess funktioner gör den till ett idealiskt val för ett brett
+                    utbud av projekt.
 
+                    Den största skillnaden mellan Tailwind och dess konkurrenter är att det ger utvecklare full kontroll
+                    över stilarna för webbapplikationer. Du kan läsa mer om Tailwindcss <a
+                        class="text-cyan-700 font-semibold" href="https://tailwindcss.com/">här</a>.</p>
+            </div>
+            <div>
+                <p class="text-3xl text-lime-600">Fördelar med Tailwindcss</p><br>
+                <p class="text-xl text-lime-700">Det finns inget snabbare ramverk än Tailwind när det kommer till
+                    HTML-styling. Som ett resultat kan man enkelt skapa snygga layouter genom att direkt styla element.
+                    Detta är möjligt eftersom Tailwind erbjuder tusentals inbyggda klasser som inte kräver att man
+                    skapar projekt från grunden. Med Tailwinds färdiga klasser kan man
+                    designa layouten direkt i HTML-filen. Detta gör det till ett mycket lyhört, mobilvänligt
+                    CSS-ramverk.</p>
+            </div>
+            <div>
+                <p class="text-3xl text-red-600">Nackdelar med Tailwindcss</p><br>
+                <p class="text-xl text-red-700">På grund av de inbyggda CSS-klasserna är Tailwind ganska intensivt att
+                    lära sig. Till skillnad från Bulma och Bootstrap har Tailwind inte många betydande stylingelement.
+                    Tyvärr betyder detta att man manuellt måste lägga till funktioner som rubriker, knappar och
+                    navigeringsfält för webbappar. Dokumentationen i Tailwindcss är inte lika bra och omfattande som den
+                    som finns till till exempel Bootstrap.</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="col-auto">
+            <p class="text-start text-3xl text-zinc-700">Fyll i formuläret för att lägga till en bok:</p>
+        </div>
+        <form>
+            <div class="mb-4">
+                <label for="titel" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Titel
+                </label>
+                <input type="text" id="titel"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Skriv in bokens titel" required>
+            </div>
+            <div class="mb-4">
+                <label for="författare" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Författare
+                </label>
+                <input type="text" id="författare"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Ange bokens författare" required>
+            </div>
+            <div class="mb-4">
 
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Vad tyckte du
+                    om boken?</label>
+                <textarea id="message" rows="4"
+                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Din kommentar"></textarea>
 
+            </div>
+            <div class="mb-4">
+                <label for="genre" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Välj bokens
+                    genre</label>
+                <select id="genre"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option>Thriller</option>
+                    <option>Skräck</option>
+                    <option>Fantasy</option>
+                    <option>Deckare</option>
+                </select>
+            </div>
+            <div class="flex items-start mb-4">
+                <div class="flex items-center h-5">
+                    <input id="remember" type="checkbox" value=""
+                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                        required>
+                </div>
+                <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Spara till ditt
+                    bibliotek?</label>
+            </div>
+            <button type="submit"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Skicka</button>
+        </form>
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="col-auto">
+            <p class="text-start text-3xl text-zinc-700">Utlästa böcker:</p>
+            <div class="flex flex-col">
+                <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                    <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                        <div class="overflow-hidden">
+                            <table class="min-w-full text-left text-sm font-light">
+                                <thead class="border-b font-medium dark:border-neutral-500">
+                                    <tr>
+                                        <th scope="col" class="px-6 py-4">#</th>
+                                        <th scope="col" class="px-6 py-4">Titel</th>
+                                        <th scope="col" class="px-6 py-4">Författare</th>
+                                        <th scope="col" class="px-6 py-4">Åsikter</th>
+                                        <th scope="col" class="px-6 py-4">Genre</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b dark:border-neutral-500">
+                                        <td class="whitespace-nowrap px-6 py-4 font-medium">1</td>
+                                        <td class="whitespace-nowrap px-6 py-4">"Daisy Darker"</td>
+                                        <td class="whitespace-nowrap px-6 py-4">Alice Feeney</td>
+                                        <td class="whitespace-nowrap px-6 py-4">Mycket bra</td>
+                                        <td class="whitespace-nowrap px-6 py-4">Thriller</td>
+                                    </tr>
+                                    <tr class="border-b dark:border-neutral-500">
+                                        <td class="whitespace-nowrap px-6 py-4 font-medium">2</td>
+                                        <td class="whitespace-nowrap px-6 py-4">"Wyjazd na weekend"</td>
+                                        <td class="whitespace-nowrap px-6 py-4">Sarah Alderson</td>
+                                        <td class="whitespace-nowrap px-6 py-4">Trevlig</td>
+                                        <td class="whitespace-nowrap px-6 py-4">Thriller</td>
+                                    </tr>
+                                    <tr class="border-b dark:border-neutral-500">
+                                        <td class="whitespace-nowrap px-6 py-4 font-medium">3</td>
+                                        <td class="whitespace-nowrap px-6 py-4">"The Glass Throne"</td>
+                                        <td class="whitespace-nowrap px-6 py-4">Sarah J Maas</td>
+                                        <td class="whitespace-nowrap px-6 py-4">Sträckläsning</td>
+                                        <td class="whitespace-nowrap px-6 py-4">Fantasy</td>
+                                    </tr>
+                                    <tr class="border-b dark:border-neutral-500">
+                                        <td class="whitespace-nowrap px-6 py-4 font-medium">4</td>
+                                        <td class="whitespace-nowrap px-6 py-4">"Knackarna"</td>
+                                        <td class="whitespace-nowrap px-6 py-4">Stephen King</td>
+                                        <td class="whitespace-nowrap px-6 py-4">Seg i början och sen kaos bryter ut -
+                                            love it!</td>
+                                        <td class="whitespace-nowrap px-6 py-4">Skräck</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section>
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <section>
+        <footer class=" bg-neutral-200 text-center dark:bg-neutral-700 lg:text-left">
+            <div class="p-4 text-center text-neutral-700 dark:text-neutral-200">
+                © 2023 Copyright:
+                <a class="text-neutral-800 dark:text-neutral-400" href="https://tailwind-elements.com/">Dominika Berg.
+                    Inlämning i kursen DT193G, HT 2023.</a>
+            </div>
+        </footer>
+    </section>
 </body>
 
 </html>
